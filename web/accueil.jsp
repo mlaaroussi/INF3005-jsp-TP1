@@ -1,7 +1,6 @@
 <%-- 
     Document   : accueil
     Created on : 2015-02-27, 20:41:23
-    Author     : mohamed
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -58,10 +57,10 @@
                         <li><label for="email">Courriel :</label> <input type="email"
                                                                          id="courriel" name="courriel" required="true">
                             <p id="emailIncorrect"></p></li>
-                        <li><label for="name">Téléphone :</label> <input type="text"
+                        <li><label for="telephone">Téléphone :</label> <input type="text"
                                                                          id="tel" name="telephone" required="true">
                             <p id="telIncorrect"></p></li>
-                        <li><label for="name">Adresse :</label> <input
+                        <li><label for="adresse">Adresse :</label> <input
                                 type="text" id="adresse" name="adresse" minlength="2" >
                             <p id="codeIncorrect"></p></li>
                        

@@ -5,8 +5,6 @@
  */
 package ca.uqam.inf3005.projet1.bean;
 
-import java.util.List;
-
 public class CommandeBean {
 
     private String nom;
