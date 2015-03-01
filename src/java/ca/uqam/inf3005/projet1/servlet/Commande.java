@@ -36,12 +36,14 @@ public class Commande extends HttpServlet {
         String nom = request.getParameter("nom");
         String telephone = request.getParameter("telephone");
         String courriel = request.getParameter("courriel");
+        String adresse = request.getParameter("adresse");
         String[] ingredients = request.getParameterValues("ingredients");
 
         String commandeStr = "<h3>Renseignements personnels</h3>"
                 + " Nom :" + nom + "<br />"
                 + " Téléphone :" + telephone + "<br />"
                 + " Courriel :" + courriel + "<br />"
+                + " Adresse :" + adresse + "<br />"
                 + " "
                 + " <h3>Ingredients</h3>";
 
@@ -55,9 +57,9 @@ public class Commande extends HttpServlet {
 
         String contextPath = getServletContext().getRealPath(File.separator);
 
-        GestionFichier.ecrireLigne(commandeStr, contextPath + "commande.txt");       
-        
-        RequestDispatcher rd=request.getRequestDispatcher("resultat.jsp?cmd="+commandeStr);  
+        GestionFichier.ecrireLigne(commandeStr, contextPath + "commande.txt");
+
+        RequestDispatcher rd = request.getRequestDispatcher("resultat.jsp?cmd=" + commandeStr);
         rd.forward(request, response);
 
     }

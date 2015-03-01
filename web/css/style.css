@@ -1,0 +1,102 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 28, 2015, 9:49:07 PM
+    Author     : MedNabil
+*/
+
+html{
+
+}
+
+body{
+width: 1100px;
+margin:0px;
+background-color:#E78A23;
+margin-left:auto;
+margin-right:auto;
+}
+
+header{
+    background-color:#FFFFFF;
+    color:#279DE3;
+    opacity:0.6;
+    margin-left:auto;
+    margin-right:auto;
+}
+nav{
+    margin-left:auto;
+    margin-right:auto;
+
+}
+nav input[type=button]{
+    font-size:15px;
+    font-weight:bold;
+    border-radius:30px;
+    width:250px;
+    height:100px;
+   
+}
+/* Formulaire */
+#formulaire{
+    padding:10px;
+    width:95%;
+    float:left;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#formulaire label{
+    /* 	border:solid 1px blue; */
+    width:170px;
+    height:25px;
+    margin-bottom:10px;
+    float:left;
+    text-align:left;
+    margin-top:5px;
+}
+
+#formulaire ul{
+    list-style-type: none;
+}
+
+#inscri ul li{
+    list-style-type: none;
+}
+
+#formulaire input, select{
+    background:#e6e6e6;
+    width:180px;
+    height:20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:12px;
+ }
+
+#formulaire textArea {
+    background:#e6e6e6;
+    height:100px;
+    width :380px;
+}
+#formulaire  input[type=submit]{
+    font-size:15px;
+    font-weight:bold;
+    width:120px;
+    height:25px;
+}
+/*#formulaire  input[type=checkbox]{
+    margin: 5px;
+   
+}*/
+#choixPizza{
+    width:40%;   
+    margin: 5px;
+}
+
+#infoPerso{
+    width:40%;
+    margin: 5px;
+}
+
