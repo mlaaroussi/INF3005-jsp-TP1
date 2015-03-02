@@ -20,10 +20,10 @@
         </header>
         <nav>
             <img src="img/slide_1.jpg">
-            <div class = "taillePizza" id="divPetit"><a href="" id="petite" value="petite" onclick="obtenirTaille();">Petite</a></div><br />
-            <div class = "taillePizza"  id="divMoyen"><a href="" id="moyen" value="moyen" onclick="obtenirTaille();">Moyen</a></div><br />
-            <div class = "taillePizza" id="divLarge"><a href="" id="large" value="large" onclick="obtenirTaille();">Large</a></div><br />
-            <div class = "taillePizza" id="divXlarge"><a href="" id="xLargee" value="xLargee" onclick="obtenirTaille();">xLargee</a></div><br />
+            <div class = "taillePizza" id="divPetit"><a href="" id="petite" value="petite" onclick="obtenirTaille();">Pizza Petite <span>10<sup>99</sup></span></a></div><br />
+            <div class = "taillePizza"  id="divMoyen"><a href="" id="moyen" value="moyen" onclick="obtenirTaille();">Pizza Moyen <span>13<sup>99</sup></a></div><br />
+            <div class = "taillePizza" id="divLarge"><a href="" id="large" value="large" onclick="obtenirTaille();">Pizza Large <span>16<sup>99</sup></a></div><br />
+            <div class = "taillePizza" id="divXlarge"><a href="" id="xLargee" value="xLargee" onclick="obtenirTaille();">Pizza xLargee <span>19<sup>99</sup></a></div><br />
         </nav>
             
         <section>
