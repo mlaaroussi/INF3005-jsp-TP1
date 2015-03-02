@@ -13,24 +13,75 @@ html{
 }
 
 body{
-width: 1100px;
+width: 1266px;
 margin:0px;
 background-color:#E78A23;
+color:#EFEFEF;
 margin-left:auto;
 margin-right:auto;
+opacity:0.8;
 }
 
 header{
-    background-color:#FFFFFF;
+    width: 1266px;
+    height: 125px;
+    background-color:#2B2122;
     color:#279DE3;
-    opacity:0.6;
     margin-left:auto;
     margin-right:auto;
 }
+header h1{
+    color:#E6E1DB;
+}
+heder img{
+    width:100px;
+    margin:50px;
+    
+}
+#msgLogo{
+    float:right;
+    margin-right: 20px;
+    font-size: 20px;
+    
+}
 nav{
+    width: 1266px;
+    height: 565px;
     margin-left:auto;
     margin-right:auto;
-
+   
+}
+.taillePizza{
+    border: solid 3px black;
+    position:absolute;
+    width: 320px;
+    height: 45px;
+    right: 150px;
+    z-index: 10;
+   text-align: center;
+   vertical-align: central;
+   border-radius: 5px;
+   background-color: #FFFFFF;
+   opacity: 0.5;
+    
+}
+.taillePizza a{
+     text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+#divPetit{
+    top:150px;
+}
+#divMoyen{
+    top:210px;
+}
+#divLarge{
+    top:270px;
+}
+#divXlarge{
+     top:330px;
 }
 nav input[type=button]{
     font-size:15px;

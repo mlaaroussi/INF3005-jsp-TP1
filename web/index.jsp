@@ -14,18 +14,20 @@
 
     <body>
         <header> 
-            <h1>Pizza UQAM INF3005</h1>
-
+            <img src="img/logo.jpg">
+            <h1 id="msgLogo">Commande votre Pizza en ligne</h1>
+            
         </header>
         <nav>
-            <input type="button" value="Petite">
-            <input type="button" value="Moyenne">
-            <input type="button" value="Large">
-            <input type="button" value="xLarge">
-            
+            <img src="img/slide_1.jpg">
+            <div class = "taillePizza" id="divPetit"><a href="" id="petite" value="petite" onclick="obtenirTaille();">Petite</a></div><br />
+            <div class = "taillePizza"  id="divMoyen"><a href="" id="moyen" value="moyen" onclick="obtenirTaille();">Moyen</a></div><br />
+            <div class = "taillePizza" id="divLarge"><a href="" id="large" value="large" onclick="obtenirTaille();">Large</a></div><br />
+            <div class = "taillePizza" id="divXlarge"><a href="" id="xLargee" value="xLargee" onclick="obtenirTaille();">xLargee</a></div><br />
         </nav>
+            
         <section>
-            <h1>Commande votre Pizza en ligne</h1>
+           
             <form id="formulaire" name="formulaire" action="Commande" method="Post">
                 <div id="choixPizza">
                     <fieldset >
