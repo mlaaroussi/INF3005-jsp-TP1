@@ -25,7 +25,11 @@
         Téléphone :<jsp:getProperty name="commande" property="telephone" /><br />
         Courriel :<jsp:getProperty name="commande" property="courriel" /><br />
         Adresse: <jsp:getProperty name="commande" property="adresse" /><br />
-
+        
+        <h3>Commande</h3>
+        <jsp:getProperty name="commande" property="taille" /><br />
+        taille pizza <%= request.getParameterValues("taille")%>
+        <%ingredients = request.getParameterValues("ingredients");%>
         <h3>Ingredients</h3>
         <%
             ingredients = request.getParameterValues("ingredients");

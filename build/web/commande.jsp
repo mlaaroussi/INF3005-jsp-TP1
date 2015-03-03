@@ -9,47 +9,47 @@
 <!DOCTYPE html>
 <html>
     <head>
+         <link rel="stylesheet" href="css/style.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Commander votre pizza</title>
     </head>
     <body>
+
+        <h1>La Commande a été enregistré</h1>        
         <%! String[] ingredients; %>
         <jsp:useBean id="commande" scope="page" class="ca.uqam.inf3005.projet1.bean.CommandeBean" />
         <jsp:setProperty name="commande" property="*" />
 
         <h3>Renseignements personnels</h3>
         Nom :<jsp:getProperty name="commande" property="nom" /><br /> 
-        Tel :<jsp:getProperty name="commande" property="telephone" /><br />
+        Téléphone :<jsp:getProperty name="commande" property="telephone" /><br />
         Courriel :<jsp:getProperty name="commande" property="courriel" /><br />
+        Adresse: <jsp:getProperty name="commande" property="adresse" /><br />
         
+        <h3>Commande</h3>
+        <jsp:getProperty name="commande" property="taille" /><br />
+        taille pizza <%= request.getParameterValues("taille")%>
+        <%ingredients = request.getParameterValues("ingredients");%>
         <h3>Ingredients</h3>
         <%
             ingredients = request.getParameterValues("ingredients");
-        %>
-        <ul>
-            <%
-                if (ingredients != null) {
-                    for (int i = 0; i < ingredients.length; i++) {
-            %>
-            <li>
-                <%
-                        out.println(ingredients[i]);
-                    }
-                %> 
-            </li>
-        </ul>
-        <%
-            } else {
-                out.println("Pas d'ingredients séléctionés");
+            String sIingredients = "";
+            if (ingredients != null) {
+                sIingredients += "<ul>";
+                for (int i = 0; i < ingredients.length; i++) {
+                    sIingredients += "<li>" + ingredients[i] + "</li>";
+                }
+                sIingredients += "</ul>";
+                out.println(sIingredients);
             }
-                
-            String contextPath = getServletContext().getRealPath(File.separator); 
-                                                
-            GestionFichier.ecrireLigne("test",contextPath+"commande.txt");
-                out.println(contextPath);
+
+            String contextPath = getServletContext().getRealPath(File.separator);
+            String commandeStr = "<ul> <li> Commande:</li> Nom:" + commande.getNom() + "</br> Téléphone:" + commande.getTelephone()
+                    + "</br> Courriel:" + commande.getCourriel() +"</br> Adresse" + commande.getAdresse() 
+                    + "</br> Iingredients: " + sIingredients + "</ul>";
+
+            GestionFichier.ecrireLigne(commandeStr, contextPath + "commande.txt");
         %>
-
-
-
+        <a href="afficher.jsp"> Afficher les commandes</a>
     </body>
 </html>

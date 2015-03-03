@@ -7,6 +7,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/javascript.js" type="text/javascript"></script> 
         <link rel="stylesheet" href="css/style.css">
         <title>Commandez de Pizza App</title>
     </head>
@@ -15,79 +17,76 @@
         <header> 
             <img src="img/logo.jpg">
             <h1 id="msgLogo">Commande votre Pizza en ligne</h1>
-            
+
         </header>
         <nav>
             <img src="img/slide_1.jpg">
-            <div class = "taillePizza" id="divPetit"><a href="" id="petite" value="petite" onclick="obtenirTaille();">Pizza Petite <span>10<sup>99</sup></span></a></div><br />
-            <div class = "taillePizza"  id="divMoyen"><a href="" id="moyen" value="moyen" onclick="obtenirTaille();">Pizza Moyen <span>13<sup>99</sup></a></div><br />
-            <div class = "taillePizza" id="divLarge"><a href="" id="large" value="large" onclick="obtenirTaille();">Pizza Large <span>16<sup>99</sup></a></div><br />
-            <div class = "taillePizza" id="divXlarge"><a href="" id="xLargee" value="xLargee" onclick="obtenirTaille();">Pizza xLargee <span>19<sup>99</sup></a></div><br />
+            <div class = "taillePizza" id="divPetit"><a href="" id="petite" data-taille="petite" onclick="obtenirTaille(this);">Pizza Petite <span>10<sup>99</sup></span></a></div><br />
+            <div class = "taillePizza"  id="divMoyen"><a href="" id="moyen" data-taille="moyenne" onclick="obtenirTaille(this);">Pizza Moyenne <span>13<sup>99</sup></a></div><br />
+            <div class = "taillePizza" id="divLarge"><a href="" id="large" data-taille="large"  onclick="obtenirTaille(this);">Pizza Large <span>16<sup>99</sup></a></div><br />
+            <div class = "taillePizza" id="divXlarge"><a href="" id="xLargee" data-taille="xLargee"  onclick="obtenirTaille(this);">Pizza xLargee <span>19<sup>99</sup></a></div><br />
         </nav>
-            
-        <section>
-           
-            <form id="formulaire" name="formulaire" action="commande.jsp" method="Post">
-                <div id="choixPizza">
-                    <fieldset >
-                       <!--<legend>Choix de Pizza </legend>
-                        <fieldset>
-                            <legend>Tailles </legend>
-                            <select name="taille">
-                                <option value="petite" >petite</option>
-                                <option value="moyenne" >moyenne</option>
-                                <option value="large" >large</option>
-                                <option value="xLarge">xLarge</option>
-                            </select>
-                        </fieldset> !-->
-                        <fieldset>
-                            <legend>Genres Pizza </legend>
-                            <select name="genre">
-                                <option value="vegetarienne">Vegetarienne</option>
-                                <option value="fruitsDeMer">Fruits De Mer</option>
-                                <option value="margherita">Margherita</option>
-                                <option value="sicilienne">Sicilienne</option>
-                                <option value="quatreSaison">Quatre saison</option>
-                            </select>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Choix ingredients</legend>
-                            <input type="checkbox" name="ingredients" value="roquette" />Roquette<br />
-                            <input type="checkbox" name="ingredients" value="asperges" />Asperges<br />
-                            <input type="checkbox" name="ingredients" value="olivesNoires" />Olives Noires<br /> 
-                            <input type="checkbox" name="ingredients"value="brocoli" />brocoli <br /> 
-                            <input type="checkbox" name="ingredients" value="cipolline" />cipolline<br /> 
-                            <input 	type="checkbox" name="ingredients" value="champignonsFrais" />champignons frais<br />
-                        </fieldset>
-                    </fieldset>
-                </div>
-                <div>
-                    <fieldset id="infoPerso">
-                        <legend>Informations personnelles</legend>
-                        <ul>
-                            <li><label for="name">Nom :</label>
-                                <input type="text" id="nomE" name="nom" minlength="2" required="true">
-                                <p id="nomIncorrect"></p>
-                            </li>
 
-                            <li>
-                                <label for="email">Courriel :</label> 
-                                <input type="email" id="courriel" name="courriel" required="true">
-                                <p id="emailIncorrect"></p></li>
-                            <li>
-                                <label for="telephone">Téléphone :</label>
-                                <input type="number" id="tel" name="telephone" required="true">
-                                <p id="telIncorrect"></p>
-                            </li>
-                            <li>
-                                <label for="adresse">Adresse :</label> 
-                                <!--<input type="text" id="adresse" name="adresse" >!-->
-                                <textarea type="text" id="adresse" name="adresse" ></textarea>
-                                <p id="codeIncorrect"></p>
-                            </li>
-                        </ul>
-                    </fieldset> 
-                </div>
+        <section id="formulaire">
+
+            <form action="commande.jsp" method="Post">
+                <select id="taille">
+                    <option value="petite" >petite</option>
+                    <option value="moyenne" >moyenne</option>
+                    <option value="large" >large</option>
+                    <option value="xLarge">xLarge</option>
+                </select>
+                <fieldset >
+
+
+                    <fieldset>
+                        <legend>Genres Pizza </legend>
+                        <select name="genre">
+                            <option value="vegetarienne">Vegetarienne</option>
+                            <option value="fruitsDeMer">Fruits De Mer</option>
+                            <option value="margherita">Margherita</option>
+                            <option value="sicilienne">Sicilienne</option>
+                            <option value="quatreSaison">Quatre saison</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Choix ingredients</legend>
+                        <input type="checkbox" name="ingredients" value="roquette" />Roquette<br />
+                        <input type="checkbox" name="ingredients" value="asperges" />Asperges<br />
+                        <input type="checkbox" name="ingredients" value="olivesNoires" />Olives Noires<br /> 
+                        <input type="checkbox" name="ingredients"value="brocoli" />brocoli <br /> 
+                        <input type="checkbox" name="ingredients" value="cipolline" />cipolline<br /> 
+                        <input 	type="checkbox" name="ingredients" value="champignonsFrais" />champignons frais<br />
+                    </fieldset>
+                </fieldset>
+
+
+                <fieldset >
+                    <legend>Informations personnelles</legend>
+                    <ul>
+                        <li><label for="name">Nom :</label>
+                            <input type="text" id="nomE" name="nom" minlength="2" required="true">
+                            <p id="nomIncorrect"></p>
+                        </li>
+
+                        <li>
+                            <label for="email">Courriel :</label> 
+                            <input type="email" id="courriel" name="courriel" required="true">
+                            <p id="emailIncorrect"></p></li>
+                        <li>
+                            <label for="telephone">Téléphone :</label>
+                            <input type="number" id="tel" name="telephone" required="true">
+                            <p id="telIncorrect"></p>
+                        </li>
+                        <li>
+                            <label for="adresse">Adresse :</label> 
+                            <!--<input type="text" id="adresse" name="adresse" >!-->
+                            <textarea type="text" id="adresse" name="adresse" ></textarea>
+                            <p id="codeIncorrect"></p>
+                        </li>
+                    </ul>
+                </fieldset> 
+
 
                 <input type="submit" value="Submit">
             </form>
