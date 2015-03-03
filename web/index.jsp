@@ -28,7 +28,7 @@
             
         <section>
            
-            <form id="formulaire" name="formulaire" action="Commande" method="Post">
+            <form id="formulaire" name="formulaire" action="commande.jsp" method="Post">
                 <div id="choixPizza">
                     <fieldset >
                        <!--<legend>Choix de Pizza </legend>
