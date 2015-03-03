@@ -4,7 +4,6 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="ca.uqam.inf3005.projet1.servlet.Commande"%>
 <!DOCTYPE html>
 <html>
     <head>
