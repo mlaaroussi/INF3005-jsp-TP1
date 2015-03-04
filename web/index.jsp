@@ -30,8 +30,8 @@
         <section id="formulaire">
 
             <form action="commande.jsp" method="Post">
-                <select id="taille">
-                    <option value="petite" >petite</option>
+                <select id="taille" name="taille">
+                    <option value="petite" selected >petite</option>
                     <option value="moyenne" >moyenne</option>
                     <option value="large" >large</option>
                     <option value="xLarge">xLarge</option>
