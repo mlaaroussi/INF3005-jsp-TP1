@@ -1,4 +1,4 @@
-/*
+select/*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
@@ -13,13 +13,13 @@ html{
 }
 
 body{
-width: 1266px;
-margin:0px;
-background-color:#E78A23;
-color:#EFEFEF;
-margin-left:auto;
-margin-right:auto;
-opacity:0.8;
+    width: 1266px;
+    margin:0px;
+    background-color:#E78A23;
+    color:#EFEFEF;
+    margin-left:auto;
+    margin-right:auto;
+    opacity:0.8;
 }
 
 header{
@@ -36,20 +36,23 @@ header h1{
 heder img{
     width:100px;
     margin:50px;
-    
+
 }
 #msgLogo{
     float:right;
     margin-right: 20px;
     font-size: 20px;
-    
+
 }
 nav{
     width: 1266px;
     height: 565px;
     margin-left:auto;
     margin-right:auto;
-   
+
+}
+section{
+    color: black;
 }
 .taillePizza{
     border: solid 3px black;
@@ -64,7 +67,7 @@ nav{
     opacity: 0.5;
 }
 .taillePizza a{
-     text-decoration: none;
+    text-decoration: none;
     font-size: 30px;
     font-weight: bolder;
 }
@@ -82,7 +85,7 @@ nav{
     top:270px;
 }
 #divXlarge{
-     top:330px;
+    top:330px;
 }
 nav input[type=button]{
     font-size:15px;
@@ -90,72 +93,113 @@ nav input[type=button]{
     border-radius:30px;
     width:250px;
     height:100px;
-   
-}
-/* Formulaire */
-#formulaire{
-    display: block;
-    position: absolute;
-    z-index: 9999;
-    width: 40%;
-    height: 100%;
-    text-align: center;
-    top: 20%;
-    left: 30%;
-    background-color:white;
+
 }
 
-#formulaire label{
-    /* 	border:solid 1px blue; */
-    width:170px;
-    height:25px;
-    margin-bottom:10px;
-    float:left;
-    color: black;
-    text-align:left;
-    margin-top:5px;
-}
-
-#formulaire ul{
-    list-style-type: none;
-}
-
-#formulaire ul li{
-    list-style-type: none;
-}
-
-#formulaire input{
-    background:#e6e6e6;
-    width:180px;
-    height:20px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size:12px;
-   
-   
- }
-
-#formulaire textArea{
-    background:#e6e6e6;
-    height:100px;
-    width :380px;
-}
-#formulaire  input[type=submit], #formulaire input[type='checkbox'] {
-    font-size:15px;
-    font-weight:bold;
-    width:120px;
-    height:25px;
-    color: black;
-}
 #taille{
-  display: none;
+    display: none;
 }
 #choixPizza{
     width:40%;   
     margin: 5px;
 }
 
+
+/**
+    CSS pour la commande
+**/
+#divVotreChoix fieldset{
+/*    border: solid 2px yellow;*/
+    width: 1200px;
+    height:110px;
+    background-color:white;
+}
+#divCommande{
+/*    border: solid 2px green;*/
+    position: absolute;
+    width: 1250px;
+    height:1000px;
+    top: 100px;
+    z-index: 9999;
+    background-color:white;
+   
+}
+#divCommande img{
+    float: right;
+}
+fieldset{
+    height:350px;
+/*    border: solid 2px pink;*/
+}
+#divGenres{
+/*    border: solid 2px red;*/
+    width: 255px;
+    height:350px;
+    float:left;
+}
+
+#divIngredients{
+/*    border: solid 2px blue;*/
+    width: 980px;
+    height:450px;
+    float:left;
+}
+.divGroupeIngredients{
+/*    border: solid 2px pink;*/
+    width: 240px;
+    height:350px;
+    float:left;
+
+}
+input[type=radio], input[type=checkbox] {
+    display:none;
+}
+
+
+input[type=checkbox], input[type=radio], input[type="text"], input[type="number"], input[type="textarea"]   {
+    float: left;
+    display: inline-block; 
+    vertical-align:middle;
+    padding: 0;
+    margin: 0;
+}
+
+input[type="text"], input[type="number"], input[type="textarea"]   {
+    float: left;
+}
 #infoPerso{
-    width:40%;
+    width:20%;
     margin: 5px;
 }
 
+#infoPerso label{
+    float: left;
+    width:150px;
+}
+divGenres label{
+    float: left;
+    content: "";  
+    display: inline-block;  
+    vertical-align:middle;
+
+}
+
+.divGroupeIngredients label{
+    float: left;
+    content: "";  
+    display: inline-block;  
+    vertical-align:middle;
+    padding: 0;
+    margin: 0;
+}
+ul {
+/*    border: solid 1px #E78A23;*/
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color: black;
+}
+/*.divGroupeIngredients fieldset ul li {
+    
+    width: 250px;
+}*/
