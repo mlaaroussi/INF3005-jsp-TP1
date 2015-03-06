@@ -17,7 +17,6 @@
         <header> 
             <img src="img/logo.jpg">
             <h1 id="msgLogo">Commande votre Pizza en ligne</h1>
-
         </header>
         <nav>
             <img src="img/slide_1.jpg">
@@ -26,9 +25,7 @@
             <div class = "taillePizza" id="divLarge"><a href="" id="large" data-taille="large"  onclick="obtenirTaille(this);">Pizza Large <span>16<sup>99</sup></a></div><br />
             <div class = "taillePizza" id="divXlarge"><a href="" id="xLargee" data-taille="xLargee"  onclick="obtenirTaille(this);">Pizza xLargee <span>19<sup>99</sup></a></div><br />
         </nav>
-
         <section id="formulaire">
-
             <form action="commande.jsp" method="Post">
                 <select id="taille" name="taille">
                     <option value="Petite" selected >petite</option>
@@ -41,7 +38,6 @@
                     <div id="divVotreChoix">
                         <fieldset>
                             <legend>Votre choix</legend>
-
                         </fieldset>
                     </div>
                     <div id="divGenres">

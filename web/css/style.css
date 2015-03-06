@@ -1,11 +1,6 @@
-select/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
+/*  Cours INF3005 TP 1
     Created on : Feb 28, 2015, 9:49:07 PM
-    Author     : MedNabil
+    Author     : 
 */
 
 html{
@@ -30,6 +25,7 @@ header{
     margin-left:auto;
     margin-right:auto;
 }
+
 header h1{
     color:#E6E1DB;
 }
@@ -38,12 +34,14 @@ heder img{
     margin:50px;
 
 }
+
 #msgLogo{
     float:right;
     margin-right: 20px;
     font-size: 20px;
 
 }
+
 nav{
     width: 1266px;
     height: 565px;
@@ -51,9 +49,11 @@ nav{
     margin-right:auto;
 
 }
+
 section{
     color: black;
 }
+
 .taillePizza{
     border: solid 3px black;
     position:absolute;
@@ -66,6 +66,7 @@ section{
     background-color: #FFFFFF;
     opacity: 0.5;
 }
+
 .taillePizza a{
     text-decoration: none;
     font-size: 30px;
@@ -75,18 +76,22 @@ section{
     float:right;
     margin-right:10px;
 }
+
 #divPetit{
     top:150px;
 }
+
 #divMoyen{
     top:210px;
 }
 #divLarge{
     top:270px;
 }
+
 #divXlarge{
     top:330px;
 }
+
 nav input[type=button]{
     font-size:15px;
     font-weight:bold;
@@ -99,27 +104,29 @@ nav input[type=button]{
 #taille{
     display: none;
 }
+
 #choixPizza{
     width:40%;   
     margin: 5px;
 }
 
-
 /**
     CSS pour la commande
 **/
+
 #divVotreChoix fieldset{
 /*    border: solid 2px yellow;*/
     width: 1200px;
-    height:110px;
+    height:50px;
     background-color:white;
 }
+
 #divCommande{
 /*    border: solid 2px green;*/
     position: absolute;
     width: 1250px;
-    height:1000px;
-    top: 100px;
+    height:900px;
+    top: 0;
     z-index: 9999;
     background-color:white;
    
@@ -128,26 +135,34 @@ nav input[type=button]{
     float: right;
 }
 fieldset{
-    height:350px;
+    height:305px;
 /*    border: solid 2px pink;*/
 }
 #divGenres{
 /*    border: solid 2px red;*/
     width: 255px;
-    height:350px;
+    height:300px;
     float:left;
 }
 
 #divIngredients{
 /*    border: solid 2px blue;*/
     width: 980px;
-    height:450px;
+    height:350px;
     float:left;
 }
 .divGroupeIngredients{
 /*    border: solid 2px pink;*/
     width: 240px;
-    height:350px;
+    height:235px;
+    float:left;
+
+}
+
+.divGroupeIngredients fieldset{
+/*    border: solid 2px pink;*/
+    width: 200px;
+    height:235px;
     float:left;
 
 }
@@ -156,32 +171,48 @@ input[type=radio], input[type=checkbox] {
 }
 
 
-input[type=checkbox], input[type=radio], input[type="text"], input[type="number"], input[type="textarea"]   {
+input[type=checkbox], input[type=radio]{
     float: left;
     display: inline-block; 
     vertical-align:middle;
-    padding: 0;
-    margin: 0;
+    padding-left: 15px;
 }
 
-input[type="text"], input[type="number"], input[type="textarea"]   {
+#infoPerso input, #infoPerso input[type="number"]{
+    border: solid 5px green;
     float: left;
+    width: 200px;
+    margin-top: 15px;
+    
+}
+
+#infoPerso textarea{
+    border: solid 5px green;
+    float: left;
+    width: 350px;
+    height: 100px;
+    margin-top: 15px;
 }
 #infoPerso{
-    width:20%;
-    margin: 5px;
+    width:35%;
+    height: 40%;
+    margin-left: 30%;
+    
 }
 
 #infoPerso label{
+    border: solid 1px red;
     float: left;
     width:150px;
+    margin-right: 15px;
+    margin-top: 15px;
 }
 divGenres label{
     float: left;
     content: "";  
     display: inline-block;  
     vertical-align:middle;
-
+    
 }
 
 .divGroupeIngredients label{
@@ -192,6 +223,7 @@ divGenres label{
     padding: 0;
     margin: 0;
 }
+
 ul {
 /*    border: solid 1px #E78A23;*/
     padding: 0;
@@ -199,7 +231,3 @@ ul {
     list-style-type: none;
     color: black;
 }
-/*.divGroupeIngredients fieldset ul li {
-    
-    width: 250px;
-}*/

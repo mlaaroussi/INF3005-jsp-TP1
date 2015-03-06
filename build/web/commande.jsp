@@ -26,11 +26,10 @@
         Courriel :<jsp:getProperty name="commande" property="courriel" /><br />
         Adresse: <jsp:getProperty name="commande" property="adresse" /><br />
         
-        <h3>Commande</h3>
+        <h3>Pizza</h3>
         
-        taille pizza  <%= request.getParameter("taille")%><br />
-        genre pizza  <%= request.getParameter("genre")%><br />
-        <%ingredients = request.getParameterValues("ingredients");%>
+        Taille pizza :<jsp:getProperty name="commande" property="taille" /><br />
+        Genre pizza  :<jsp:getProperty name="commande" property="genre" /><br />
         <h3>Ingredients</h3>
         <%
             ingredients = request.getParameterValues("ingredients");
@@ -45,9 +44,9 @@
             }
 
             String contextPath = getServletContext().getRealPath(File.separator);
-            String commandeStr = "<ul> <li> Commande:</li> Nom:" + commande.getNom() + "</br> Téléphone:" + commande.getTelephone()
+            String commandeStr = "<h4> Commande:</h4> Nom:" + commande.getNom() + "</br> Téléphone:" + commande.getTelephone()
                     + "</br> Courriel:" + commande.getCourriel() +"</br> Adresse" + commande.getAdresse() 
-                    + "</br> Iingredients: " + sIingredients + "</ul>";
+                    + "</br> Iingredients: " + sIingredients ;
 
             GestionFichier.ecrireLigne(commandeStr, contextPath + "commande.txt");
         %>
