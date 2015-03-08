@@ -8,12 +8,12 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
+    <head class="resultat">
          <link rel="stylesheet" href="css/style.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Afficher commande</title>
     </head>
-    <body>
+    <body class="resulat">
         <h3>Liste des commandes:</h3>
           <%
             String contextPath = getServletContext().getRealPath(File.separator);

@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="js/javascript.js" type="text/javascript"></script> 
         <link rel="stylesheet" href="css/style.css">
@@ -15,89 +16,41 @@
 
     <body>
         <header> 
-            <img src="img/logo.jpg">
+
             <h1 id="msgLogo">Commande votre Pizza en ligne</h1>
         </header>
         <nav>
-            <img src="img/slide_1.jpg">
-            <div class = "taillePizza" id="divPetit"><a href="" id="petite" data-taille="petite" onclick="obtenirTaille(this);">Pizza Petite <span>10<sup>99</sup></span></a></div><br />
-            <div class = "taillePizza"  id="divMoyen"><a href="" id="moyen" data-taille="moyenne" onclick="obtenirTaille(this);">Pizza Moyenne <span>13<sup>99</sup></a></div><br />
-            <div class = "taillePizza" id="divLarge"><a href="" id="large" data-taille="large"  onclick="obtenirTaille(this);">Pizza Large <span>16<sup>99</sup></a></div><br />
-            <div class = "taillePizza" id="divXlarge"><a href="" id="xLargee" data-taille="xLargee"  onclick="obtenirTaille(this);">Pizza xLargee <span>19<sup>99</sup></a></div><br />
+
         </nav>
         <section id="formulaire">
             <form action="commande.jsp" method="Post">
-                <select id="taille" name="taille">
-                    <option value="Petite" selected >petite</option>
-                    <option value="Moyenne" >moyenne</option>
-                    <option value="Large" >large</option>
-                    <option value="XLarge">xLarge</option>
-                </select>
+
                 <div id="divCommande">
-                     <img id="close" src="img/close.jpg">
-                    <div id="divVotreChoix">
-                        <fieldset>
-                            <legend>Votre choix</legend>
-                        </fieldset>
-                    </div>
                     <div id="divGenres">
                         <fieldset>
                             <legend>Genres Pizza </legend>
                             <ul>
                                 <li>
-                                    <input type="radio" id="rb1" name="genre" value="TouteGarnie"  />
-                                    <label for="rb1">Toute garnie<span id ="prix"></span></label>
+                                    <input type="radio" id="petite" name="taille" value="Petite"  />
+                                    <label for="petite">Pizza Petite<span id ="prix"></span></label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="rb2" name="genre" value="Halal" />
-                                    <label for="rb2">Halal<span id ="prix"></span></label>
+                                    <input type="radio" id="moyen" name="taille" value="Moyen" />
+                                    <label for="moyen">Pizza Moyenne<span id ="prix"></span></label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="rb3" name="genre" value="Nature" />
-                                    <label for="rb3">Nature<span id ="prix"></span></label>
+                                    <input type="radio" id="large" name="taille" value="Large" />
+                                    <label for="large">Pizza Large<span id ="prix"></span></label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="rb4" name="genre" value="Margherita" />
-                                    <label for="rb4">Margherita<span id ="prix"></span></label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="rb5" name="genre"value="Pepperoni" />
-                                    <label for="rb5">Pepperoni<span id ="prix"></span></label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="rb6" name="genre" value="Hawaïenne" />
-                                    <label for="rb6">Hawaïenne<span id ="prix"></span></label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="rb7" name="genre" value="Mexicaine" />
-                                    <label for="rb7">Mexicaine<span id ="prix"></span></label>
-
-                                </li>
-                                <li>
-                                    <input type="radio" id="rb8" name="genre" value="Fruits De Mer" />
-                                    <label for="rb8">Fruits de mer<span id ="prix"></span></label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="rb9" name="genre" value="Margherita" />
-                                    <label for="rb9">Margherita<span id ="prix"></span></label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="rb10" name="genre"value="QuatreSaison" />
-                                    <label for="rb10">Quatre saison<span id ="prix"></span></label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="rb11" name="genre" value="Viande Fumee" />
-                                    <label for="rb11">Viande Fumee<span id ="prix"></span></label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="rb12" name="genre" value="Végétarienne" />
-                                    <label for="rb12">Végétarienne<span id ="prix"></span></label>
+                                    <input type="radio" id="xLargee" name="taille" value="xLargee" />
+                                    <label for="xLargee">Pizza xLargee<span id ="prix"></span></label>
                                 </li>
                             </ul>
                         </fieldset>  
                     </div>
                     <div id="divIngredients"> 
-                        <h2>Ingredients de votre choix</h2>
+                        <h3>Ingredients de votre choix</h3>
                         <div class ="divGroupeIngredients">
                             <fieldset>
                                 <legend>Sauce</legend>
@@ -185,8 +138,8 @@
                                         <label for="cb17">Moins de Fromage</label>
                                     </li>
                                     <br />
-                                    
-                                    
+
+
 
                                 </ul>
                             </fieldset>

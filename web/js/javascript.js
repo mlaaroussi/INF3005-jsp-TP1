@@ -4,24 +4,20 @@
  * and open the template in the editor.
  */
 
-function obtenirTaille(choix) {
-    var tailleChoix = choix.getAttribute("data-taille");
-    $('#taille option[value=tailleChoix]').attr('selected', 'selected');
-    document.getElementById("taille").value = tailleChoix;
-}
-
-$(document).ready(function () {
-    $("#msgLogo").html("test jquery fonctionnne");
-});
-
-$(document).ready(function () {
-    $(".taillePizza").click(function () {
-        $("#divCommande").css("display", "block");
-    });
-});
-
-$(document).ready(function () {
-    $("#close").click(function () {
-        $("#divCommande").css("display", "none");
-    });
-});
+//function obtenirTaille(choix) {
+//    var tailleChoix = choix.getAttribute("data-taille");
+//    $('#taille option[value=tailleChoix]').attr('selected', 'selected');
+//    document.getElementById("taille").value = tailleChoix;
+//}
+//
+//$(document).ready(function () {
+//    $(".taillePizza").click(function () {
+//        $("#divCommande").css("display", "block");
+//    });
+//});
+//
+//$(document).ready(function () {
+//    $("#close").click(function () {
+//        $("#divCommande").css("display", "none");
+//    });
+//});
