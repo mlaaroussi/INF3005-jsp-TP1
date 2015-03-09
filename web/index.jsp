@@ -31,7 +31,7 @@
                             <legend>Genres Pizza </legend>
                             <ul>
                                 <li>
-                                    <input type="radio" id="petite" name="taille" value="Petite"  />
+                                    <input type="radio" id="petite" name="taille" value="Petite"  required />
                                     <label for="petite">Pizza Petite<span id ="prix"></span></label>
                                 </li>
                                 <li>
@@ -56,7 +56,7 @@
                                 <legend>Sauce</legend>
                                 <ul>
                                     <li>
-                                        <input type="checkbox" id="cb1" name="ingredients" value="Extra Sauce" />
+                                        <input type="checkbox" id="cb1" name="ingredients" value="Extra Sauce"  />
                                         <label for="cb1">Extra Sauce</label>
                                     </li>
                                     <br />
@@ -178,7 +178,7 @@
                         <ul>
                             <li><label for="name">Nom :</label>
                                 <input type="text" id="nomE" name="nom" minlength="2" required="true">
-                                <p id="nomIncorrect"></p>
+                                
                             </li>
 
                             <li>
@@ -188,17 +188,17 @@
                             <li>
                                 <label for="telephone">Téléphone :</label>
                                 <input type="number" id="tel" name="telephone" required="true">
-                                <p id="telIncorrect"></p>
+                              
                             </li>
                             <li>
                                 <label for="adresse">Adresse :</label> 
                                 <!--<input type="text" id="adresse" name="adresse" >!-->
-                                <textarea type="text" id="adresse" name="adresse" ></textarea>
-                                <p id="codeIncorrect"></p>
+                                <textarea type="text" id="adresse" name="adresse" required="true"></textarea>
+                             
                             </li>
                             <li>
                                 <input type="submit" value="Commander">
-                                <input type="submit" value="Annuler">
+                                <input type="reset" value="Annuler">
                             </li>
                         </ul>
                     </fieldset> 

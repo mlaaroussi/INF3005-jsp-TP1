@@ -194,7 +194,7 @@ input[type=checkbox], input[type=radio]{
 #infoPerso textarea{
 /*    border: solid 5px green;*/
     float: left;
-    width: 350px;
+    width: 370px;
     height: 100px;
     margin-top: 15px;
 }
