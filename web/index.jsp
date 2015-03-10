@@ -31,19 +31,19 @@
                             <legend>Genres Pizza </legend>
                             <ul>
                                 <li>
-                                    <input type="radio" id="petite" name="taille" value="Petite"  required />
+                                    <input type="radio" id="petite" name="taille" value="Petite"  required onchange = "taillePizza(this)"/>
                                     <label for="petite">Pizza Petite<span id ="prix"></span></label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="moyen" name="taille" value="Moyen" />
+                                    <input type="radio" id="moyen" name="taille" value="Moyenne" onchange = "taillePizza(this)"/>
                                     <label for="moyen">Pizza Moyenne<span id ="prix"></span></label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="large" name="taille" value="Large" />
+                                    <input type="radio" id="large" name="taille" value="Large" onchange = "taillePizza(this)"/>
                                     <label for="large">Pizza Large<span id ="prix"></span></label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="xLargee" name="taille" value="xLargee" />
+                                    <input type="radio" id="xLargee" name="taille" value="xLargee" onchange = "taillePizza(this)"/>
                                     <label for="xLargee">Pizza xLargee<span id ="prix"></span></label>
                                 </li>
                             </ul>
@@ -56,27 +56,27 @@
                                 <legend>Sauce</legend>
                                 <ul>
                                     <li>
-                                        <input type="checkbox" id="cb1" name="ingredients" value="Extra Sauce"  />
+                                        <input type="checkbox" id="cb1" name="ingredients" value="Extra Sauce"  onchange="compter(this)"/>
                                         <label for="cb1">Extra Sauce</label>
                                     </li>
                                     <br />
                                     <li>
-                                        <input type="checkbox" id="cb2" name="ingredients" value="Sauce BBQ" />
+                                        <input type="checkbox" id="cb2" name="ingredients" value="Sauce BBQ" onchange="compter(this)"/>
                                         <label for="cb2">Sauce BBQ</label>
                                     </li>
                                     <br />
                                     <li>
-                                        <input type="checkbox" id="cb3" name="ingredients" value="Poivre De Chili" />
+                                        <input type="checkbox" id="cb3" name="ingredients" value="Poivre De Chili" onchange="compter(this)"/>
                                         <label for="cb3">Poivre de Chili</label>
                                     </li>
                                     <br />
                                     <li>
-                                        <input type="checkbox" id="cb4"  name="ingredients" value="Ail" />
+                                        <input type="checkbox" id="cb4"  name="ingredients" value="Ail" onchange="compter(this)"/>
                                         <label for="cb4">Ail</label>
                                     </li>
                                     <br />
                                     <li>
-                                        <input type="checkbox" id="cb5" name="ingredients"value="Moins DeSauce" />
+                                        <input type="checkbox" id="cb5" name="ingredients"value="Moins DeSauce" onchange="compter(this)"/>
                                         <label for="cb5">Moins de Sauce</label>
                                     </li>
                                 </ul>
@@ -88,27 +88,27 @@
                                 <legend>Légume</legend>
                                 <ul>
                                     <li>
-                                        <input type="checkbox" id="cb7" name="ingredients" value="Olives Vertes" />
+                                        <input type="checkbox" id="cb7" name="ingredients" value="Olives Vertes" onchange="compter(this)"/>
                                         <label for="cb7">Olives vertes</label>
                                     </li>
                                     <br />
                                     <li>
-                                        <input type="checkbox" id="cb8" name="ingredients" value="Olives Kalamata" />
+                                        <input type="checkbox" id="cb8" name="ingredients" value="Olives Kalamata" onchange="compter(this)"/>
                                         <label for="cb8">Olives Kalamata</label>
                                     </li>
                                     <br />
                                     <li>
-                                        <input type="checkbox" id="cb9" name="ingredients" value="Asperges" />
+                                        <input type="checkbox" id="cb9" name="ingredients" value="Asperges" onchange="compter(this)"/>
                                         <label for="cb9">Asperges</label>
                                     </li>
                                     <br />
                                     <li>
-                                        <input type="checkbox" id="cb10"  name="ingredients" value="Champignons" />
+                                        <input type="checkbox" id="cb10"  name="ingredients" value="Champignons" onchange="compter(this)"/>
                                         <label for="cb10"> Champignons</label>
                                     </li>
                                     <br />
                                     <li>
-                                        <input type="checkbox" id="cb11" name="ingredients"value="Brocoli" />
+                                        <input type="checkbox" id="cb11" name="ingredients"value="Brocoli" onchange="compter(this)"/>
                                         <label for="cb11">Brocoli</label>
                                     </li>
                                 </ul>
@@ -119,22 +119,22 @@
                                 <legend>Fromage</legend>
                                 <ul>
                                     <li>
-                                        <input type="checkbox" id="cb14" name="ingredients" value="Parmesan" />
+                                        <input type="checkbox" id="cb14" name="ingredients" value="Parmesan" onchange="compter(this)"/>
                                         <label for="cb14">Parmesan</label>
                                     </li>
                                     <br />
                                     <li>
-                                        <input type="checkbox" id="cb15" name="ingredients" value="Fromagefeta" />
+                                        <input type="checkbox" id="cb15" name="ingredients" value="Fromagefeta" onchange="compter(this)"/>
                                         <label for="cb15">Fromage féta</label>
                                     </li>
                                     <br />
                                     <li>
-                                        <input type="checkbox" id="cb16" name="ingredients" value="Extra Fromage" />
+                                        <input type="checkbox" id="cb16" name="ingredients" value="Extra Fromage" onchange="compter(this)"/>
                                         <label for="cb16">Extra Fromage</label>
                                     </li>
                                     <br />
                                     <li>
-                                        <input type="checkbox" id="cb17"  name="ingredients" value="Moins De Fromage" />
+                                        <input type="checkbox" id="cb17"  name="ingredients" value="Moins De Fromage" onchange="compter(this)"/>
                                         <label for="cb17">Moins de Fromage</label>
                                     </li>
                                     <br />
@@ -149,22 +149,22 @@
                                 <legend>Viandes</legend>
                                 <ul>
                                     <li>
-                                        <input type="checkbox" id="cb21" name="ingredients" value="Boeuf" />
+                                        <input type="checkbox" id="cb21" name="ingredients" value="Boeuf" onchange = "compter(this)"/>
                                         <label for="cb21">Boeuf</label>
                                     </li>
                                     <br />
                                     <li>
-                                        <input type="checkbox" id="cb22" name="ingredients" value="Poulet" />
+                                        <input type="checkbox" id="cb22" name="ingredients" value="Poulet" onchange = "compter(this)"/>
                                         <label for="cb22">Poulet</label>
                                     </li>
                                     <br />
                                     <li>
-                                        <input type="checkbox" id="cb23" name="ingredients" value="Fruits de Mer" />
+                                        <input type="checkbox" id="cb23" name="ingredients" value="Fruits de Mer" onchange = "compter(this)"/>
                                         <label for="cb23">Fruits de Mer</label>
                                     </li>
                                     <br />
                                     <li>
-                                        <input type="checkbox" id="cb24"  name="ingredients" value="Bacon" />
+                                        <input type="checkbox" id="cb24"  name="ingredients" value="Bacon" onchange = "compter(this)"/>
                                         <label for="cb24">Bacon</label>
                                     </li>
                                     <br />                                
@@ -178,27 +178,41 @@
                         <ul>
                             <li><label for="name">Nom :</label>
                                 <input type="text" id="nomE" name="nom" minlength="2" required="true">
-                                
+
                             </li>
 
                             <li>
                                 <label for="email">Courriel :</label> 
                                 <input type="email" id="courriel" name="courriel" required="true">
-                                <p id="emailIncorrect"></p></li>
+
                             <li>
                                 <label for="telephone">Téléphone :</label>
                                 <input type="number" id="tel" name="telephone" required="true">
-                              
+
                             </li>
                             <li>
                                 <label for="adresse">Adresse :</label> 
-                                <!--<input type="text" id="adresse" name="adresse" >!-->
                                 <textarea type="text" id="adresse" name="adresse" required="true"></textarea>
-                             
                             </li>
                             <li>
                                 <input type="submit" value="Commander">
                                 <input type="reset" value="Annuler">
+                            </li>
+                        </ul>
+                    </fieldset> 
+                    <fieldset id="infoCommande">
+                        <legend>Commande :</legend>
+                        <ul>
+                            <li id='choixPizza'>
+                               
+                            </li>
+                            <li id="choixIngredients">
+
+
+                            </li>
+                            <li>
+
+
                             </li>
                         </ul>
                     </fieldset> 

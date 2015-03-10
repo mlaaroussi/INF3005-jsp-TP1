@@ -13,8 +13,8 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Commander votre pizza</title>
     </head>
-    <body>
-        <div class="resultat">
+    <body class='resultat'>
+        <div>
             <h1>La Commande a été enregistré</h1>        
             <%! String[] ingredients; %>
             <jsp:useBean id="commande" scope="page" class="ca.uqam.inf3005.projet1.bean.CommandeBean" />
@@ -24,19 +24,19 @@
             Nom :<jsp:getProperty name="commande" property="nom" /><br /> 
             Téléphone :<jsp:getProperty name="commande" property="telephone" /><br />
             Courriel :<jsp:getProperty name="commande" property="courriel" /><br />
-            Adresse: <jsp:getProperty name="commande" property="adresse" /><br />
+            <span class='resultat'>Adresse: </span><jsp:getProperty name="commande" property="adresse" /><br />
 
             <h3>Pizza</h3>
 
-            Taille pizza :<jsp:getProperty name="commande" property="taille" /><br />
+            <span>Taille pizza :</span><jsp:getProperty name="commande" property="taille" /><br />
             <h3>Ingredients</h3>
             <%
                 ingredients = request.getParameterValues("ingredients");
                 String sIingredients = "";
                 if (ingredients != null) {
-                    sIingredients += "<ul>";
+                    sIingredients += "<ul class='resultat'>";
                     for (int i = 0; i < ingredients.length; i++) {
-                        sIingredients += "<li>" + ingredients[i] + "</li>";
+                        sIingredients += "<li class='resultat'>" + ingredients[i] + "</li>";
                     }
                     sIingredients += "</ul>";
                     out.println(sIingredients);
