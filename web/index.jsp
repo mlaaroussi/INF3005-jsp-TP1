@@ -32,19 +32,22 @@
                             <ul>
                                 <li>
                                     <input type="radio" id="petite" name="taille" value="Petite"  required onchange = "taillePizza(this)"/>
-                                    <label for="petite">Pizza Petite<span id ="prix"></span></label>
+                                    <label for="petite">Pizza Petite<span id ="prix">10<sup>99</sup></span></label>
                                 </li>
+                                <br />
                                 <li>
                                     <input type="radio" id="moyen" name="taille" value="Moyenne" onchange = "taillePizza(this)"/>
-                                    <label for="moyen">Pizza Moyenne<span id ="prix"></span></label>
+                                    <label for="moyen">Pizza Moyenne<span id ="prix">13<sup>99</sup></span></label>
                                 </li>
+                                 <br />
                                 <li>
                                     <input type="radio" id="large" name="taille" value="Large" onchange = "taillePizza(this)"/>
-                                    <label for="large">Pizza Large<span id ="prix"></span></label>
+                                    <label for="large">Pizza Large<span id ="prix">16<sup>99</sup></span></label>
                                 </li>
+                                 <br />
                                 <li>
                                     <input type="radio" id="xLargee" name="taille" value="xLargee" onchange = "taillePizza(this)"/>
-                                    <label for="xLargee">Pizza xLargee<span id ="prix"></span></label>
+                                    <label for="xLargee">Pizza xLargee<span id ="prix">19<sup>99</sup></span></label>
                                 </li>
                             </ul>
                         </fieldset>  
@@ -184,7 +187,7 @@
                             <li>
                                 <label for="email">Courriel :</label> 
                                 <input type="email" id="courriel" name="courriel" required="true">
-
+                            </li>        
                             <li>
                                 <label for="telephone">Téléphone :</label>
                                 <input type="number" id="tel" name="telephone" required="true">
@@ -195,8 +198,9 @@
                                 <textarea type="text" id="adresse" name="adresse" required="true"></textarea>
                             </li>
                             <li>
+                                <input type="hidden" id= "prix" name="prix" value="10.99">
                                 <input type="submit" value="Commander">
-                                <input type="reset" value="Annuler">
+                                <input type="reset" value="Réinitialiser" onclick="reinitialiser();">
                             </li>
                         </ul>
                     </fieldset> 
@@ -210,7 +214,7 @@
 
 
                             </li>
-                            <li>
+                            <li id="prixCommande">
 
 
                             </li>

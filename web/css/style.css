@@ -144,7 +144,10 @@ fieldset{
     height:250px;
     float:left;
 }
-
+#divGenres fieldset label span{
+    float : right;
+   
+}
 #divIngredients{
 /*    border: solid 2px blue;*/
     width: 980px;

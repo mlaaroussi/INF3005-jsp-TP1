@@ -41,4 +41,28 @@ function compter(selection) {
 
 function taillePizza(choix) {
     document.getElementById("choixPizza").innerHTML = "Pizza " + choix.value;
+    if(choix.value === "petite"){
+        document.getElementById("prix").value = 10.99;
+        document.getElementById("prixCommande").innerHTML +=  "<br /> Prix :" + 10.99;
+    }else if(choix.value === "moyenne"){
+        document.getElementById("prix").value = 13.99;
+        document.getElementById("prixCommande").innerHTML +=  "<br /> Prix :" + 13.99;
+    }else if (choix.value === "large"){
+        document.getElementById("prix").value = 16.99;
+        document.getElementById("prixCommande").innerHTML +=  "<br /> Prix :"+ 16.99;
+    }else{
+        document.getElementById("prix").value = 19.99;
+        document.getElementById("prixCommande").innerHTML =  "<br /> Prix :" + 19.99;
+    }
+}
+
+function reinitialiser(){
+    document.getElementById("choixPizza").innerHTML = "";
+    document.getElementById("prixCommande").innerHTML = "";
+    document.getElementById("prixCommande").innerHTML = "";
+    document.getElementById("prixCommande").innerHTML = "";
+    document.getElementById("prixCommande").innerHTML = "";
+    document.getElementById("choixIngredients").innerHTML = "";
+    document.getElementById("choixIngredients").innerHTML = "";
+    count = 0;
 }
