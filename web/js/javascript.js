@@ -1,62 +1,63 @@
 /* 
- * To change this license header, choose License Headers in Project Properties.
+ * TP 1 INF3005
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
 /* global count */
 
-//function obtenirTaille(choix) {
-//    var tailleChoix = choix.getAttribute("data-taille");
-//    $('#taille option[value=tailleChoix]').attr('selected', 'selected');
-//    document.getElementById("taille").value = tailleChoix;
-//}
-//
-//$(document).ready(function () {
-//    $(".taillePizza").click(function () {
-//        $("#divCommande").css("display", "block");
-//    });
-//});
-//
-//$(document).ready(function () {
-//    $("#close").click(function () {
-//        $("#divCommande").css("display", "none");
-//    });
-//});
+
 var count = 0;
 function compter(selection) {
     if (selection.checked) {
         count += 1;
         if (count === 1) {
-            document.getElementById("choixIngredients").innerHTML += "<h4> Ingredients</h4>" +  selection.value;
-        } else {
-            document.getElementById("choixIngredients").innerHTML +=  "<br />" + selection.value;
+            document.getElementById("listIngredients").innerHTML = "Ingredients";
+            $("#choixIngredients").append("<li>" + selection.value + "</li>");
+        } else if(count <= 5){
+            $("#choixIngredients").append("<li>" + selection.value + "</li>");
+        }else if(count === 6 ){
+            alert("un maximum de 5 choix !");
+            $(selection).attr("checked", false);
+            count = 5;
         }
-
-    }
-    if (count > 5) {
-        alert("Maximum de 5 garnitures autorisees");
+    } else if (!selection.checked) {
+        count -= 1;
+        if (count === 0) {
+            document.getElementById("listIngredients").innerHTML = "";
+            $("#choixIngredients li").each(function () {
+                if ($(this).text() === selection.value) {
+                    this.remove();
+                }
+            });
+        } else {
+            $("#choixIngredients li").each(function () {
+                if ($(this).text() === selection.value) {
+                    this.remove();
+                }
+            });
+        }
     }
 }
 
 function taillePizza(choix) {
     document.getElementById("choixPizza").innerHTML = "Pizza " + choix.value;
-    if(choix.value === "petite"){
+    if (choix.value === "petite") {
         document.getElementById("prix").value = 10.99;
-        document.getElementById("prixCommande").innerHTML +=  "<br /> Prix :" + 10.99;
-    }else if(choix.value === "moyenne"){
+        document.getElementById("prixCommande").innerHTML += "<br /> Prix :" + 10.99;
+    } else if (choix.value === "moyenne") {
         document.getElementById("prix").value = 13.99;
-        document.getElementById("prixCommande").innerHTML +=  "<br /> Prix :" + 13.99;
-    }else if (choix.value === "large"){
+        document.getElementById("prixCommande").innerHTML += "<br /> Prix :" + 13.99;
+    } else if (choix.value === "large") {
         document.getElementById("prix").value = 16.99;
-        document.getElementById("prixCommande").innerHTML +=  "<br /> Prix :"+ 16.99;
-    }else{
+        document.getElementById("prixCommande").innerHTML += "<br /> Prix :" + 16.99;
+    } else {
         document.getElementById("prix").value = 19.99;
-        document.getElementById("prixCommande").innerHTML =  "<br /> Prix :" + 19.99;
+        document.getElementById("prixCommande").innerHTML = "<br /> Prix :" + 19.99;
     }
 }
 
-function reinitialiser(){
+function reinitialiser() {
     document.getElementById("choixPizza").innerHTML = "";
     document.getElementById("prixCommande").innerHTML = "";
     document.getElementById("prixCommande").innerHTML = "";

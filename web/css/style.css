@@ -231,7 +231,7 @@ divGenres fieldset{
     margin: 0;
 }
 
-ul {
+ul, #choixIngredients {
 /*    border: solid 1px #E78A23;*/
     padding: 0;
     margin: 0;
@@ -243,3 +243,4 @@ ul {
 .resultat{
     color: black;
 }
+

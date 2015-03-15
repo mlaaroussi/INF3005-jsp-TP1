@@ -11,9 +11,18 @@ public class CommandeBean {
     private String telephone;
     private String adresse;
     private String courriel;
-
+    private String prix;
     private String taille;
     private String genre;
+
+    public String getPrix() {
+        return prix;
+    }
+
+    public void setPrix(String prix) {
+        this.prix = prix;
+    }
+   
     private String[] ingerdients;
 
     public String getNom() {

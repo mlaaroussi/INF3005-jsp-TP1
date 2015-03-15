@@ -49,6 +49,7 @@
 
                 GestionFichier.ecrireLigne(commandeStr, contextPath + "commande.txt");
             %>
+            Prix :<jsp:getProperty name="commande" property="prix" /><br /> 
             <a href="afficher.jsp"> Afficher les commandes</a>
         </div>
 
