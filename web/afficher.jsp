@@ -14,8 +14,8 @@
         <title>Afficher commande</title>
     </head>
     <body class="resulat">
-        <h3>Liste des commandes:</h3>
-          <%
+        <h3 class='resultat'>Liste des commandes:</h3>
+        <%
             String contextPath = getServletContext().getRealPath(File.separator);
 
             out.println(GestionFichier.lire(contextPath + "commande.txt"));

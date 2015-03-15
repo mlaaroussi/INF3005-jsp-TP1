@@ -8,10 +8,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-       
-      
-         <script src="js/javascript.js" type="text/javascript"></script> 
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+        <script src="js/javascript.js" type="text/javascript"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <link rel="stylesheet" href="css/style.css">
         <title>Commandez de Pizza App</title>
     </head>
@@ -30,26 +30,47 @@
                 <div id="divCommande">
                     <div id="divGenres">
                         <fieldset>
-                            <legend>Genres Pizza </legend>
+                            <legend>Taille Pizza</legend>
                             <ul>
                                 <li>
                                     <input type="radio" id="petite" name="taille" value="Petite"  required onchange = "taillePizza(this)"/>
-                                    <label for="petite">Pizza Petite<span id ="prix">10<sup>99</sup></span></label>
+                                    <label for="petite">Pizza Petite<span id ="prixP">10<sup>99</sup></span></label>
                                 </li>
                                 <br />
                                 <li>
                                     <input type="radio" id="moyen" name="taille" value="Moyenne" onchange = "taillePizza(this)"/>
-                                    <label for="moyen">Pizza Moyenne<span id ="prix">13<sup>99</sup></span></label>
+                                    <label for="moyen">Pizza Moyenne<span id ="prixM">13<sup>99</sup></span></label>
                                 </li>
-                                 <br />
+                                <br />
                                 <li>
                                     <input type="radio" id="large" name="taille" value="Large" onchange = "taillePizza(this)"/>
-                                    <label for="large">Pizza Large<span id ="prix">16<sup>99</sup></span></label>
+                                    <label for="large">Pizza Large<span id ="prixL">16<sup>99</sup></span></label>
                                 </li>
-                                 <br />
+                                <br />
                                 <li>
                                     <input type="radio" id="xLargee" name="taille" value="xLargee" onchange = "taillePizza(this)"/>
-                                    <label for="xLargee">Pizza xLargee<span id ="prix">19<sup>99</sup></span></label>
+                                    <label for="xLargee">Pizza xLargee<span id ="prixXl">19<sup>99</sup></span></label>
+                                </li>
+                            </ul>
+                        </fieldset>  
+                        <fieldset>
+                            <legend>Genres Pizza </legend>
+                            <ul>
+                                <li>
+                                    <input type="radio" id="pepperoni" name="genre" value="Pepperoni" required onchange="genrePizza(this)"/>
+                                    <label for="rb5">Pepperoni<span id ="prix"></span></label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="fruits" name="genre" value="Fruits De Mer" required  onchange="genrePizza(this)"/>
+                                    <label for="rb8">Fruits de mer<span id ="prix"></span></label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="viande" name="genre" value="Viande Fumee" required onchange="genrePizza(this)"/>
+                                    <label for="rb11">Viande Fumee<span id ="prix"></span></label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="vegi" name="genre" value="Végétarienne" required onchange="genrePizza(this)"/>
+                                    <label for="rb12">Végétarienne<span id ="prix"></span></label>
                                 </li>
                             </ul>
                         </fieldset>  
@@ -88,6 +109,7 @@
 
                             </fieldset>
                         </div>
+
                         <div class ="divGroupeIngredients">
                             <fieldset>
                                 <legend>Légume</legend>
@@ -208,23 +230,16 @@
                     </fieldset> 
                     <fieldset id="infoCommande">
                         <legend>Commande :</legend>
-                        <h4 id='choixPizza'></h4> <span id="prixCommande"></span>
-                         <h4 id='listIngredients'></h4>
-                            <ul id="choixIngredients">
-                           
-                            </ul>       
-
-                            </li>
-                           
-
-
+                        <h4 id='choixPizza'></h4> 
+                        <h6 id="genrePizza"></h6>
+                        <h4 id='listIngredients'></h4>
+                        <ul id="choixIngredients">
                             
-                        
+                        </ul>     
+                        <span id="prixCommande"></span>
                     </fieldset> 
                 </div>
             </form>
         </section>
     </body>
-    <footer> </footer>
-
 </html>

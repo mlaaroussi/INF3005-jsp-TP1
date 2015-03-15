@@ -14,9 +14,9 @@ function compter(selection) {
         if (count === 1) {
             document.getElementById("listIngredients").innerHTML = "Ingredients";
             $("#choixIngredients").append("<li>" + selection.value + "</li>");
-        } else if(count <= 5){
+        } else if (count <= 5) {
             $("#choixIngredients").append("<li>" + selection.value + "</li>");
-        }else if(count === 6 ){
+        } else if (count === 6) {
             alert("un maximum de 5 choix !");
             $(selection).attr("checked", false);
             count = 5;
@@ -42,13 +42,14 @@ function compter(selection) {
 
 function taillePizza(choix) {
     document.getElementById("choixPizza").innerHTML = "Pizza " + choix.value;
-    if (choix.value === "petite") {
+     document.getElementById("prixCommande").innerHTML = "";
+    if (choix.value === "Petite") {
         document.getElementById("prix").value = 10.99;
         document.getElementById("prixCommande").innerHTML += "<br /> Prix :" + 10.99;
-    } else if (choix.value === "moyenne") {
+    } else if (choix.value === "Moyenne") {
         document.getElementById("prix").value = 13.99;
         document.getElementById("prixCommande").innerHTML += "<br /> Prix :" + 13.99;
-    } else if (choix.value === "large") {
+    } else if (choix.value === "Large") {
         document.getElementById("prix").value = 16.99;
         document.getElementById("prixCommande").innerHTML += "<br /> Prix :" + 16.99;
     } else {
@@ -57,6 +58,9 @@ function taillePizza(choix) {
     }
 }
 
+function genrePizza(choix) {
+    document.getElementById("genrePizza").innerHTML = "Pizza " + choix.value;
+}
 function reinitialiser() {
     document.getElementById("choixPizza").innerHTML = "";
     document.getElementById("prixCommande").innerHTML = "";

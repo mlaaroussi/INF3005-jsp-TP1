@@ -43,10 +43,11 @@
                 }
 
                 String contextPath = getServletContext().getRealPath(File.separator);
-                String commandeStr = "<h4> Commande:</h4> Nom:" + commande.getNom() + "</br> Téléphone:" + commande.getTelephone()
+                String commandeStr = "<div id='afficher'>"
+                        + "<h4> Commande:</h4> Nom:" + commande.getNom() + "</br> Téléphone:" + commande.getTelephone()
                         + "</br> Courriel:" + commande.getCourriel() + "</br> Adresse" + commande.getAdresse()
-                        + "</br> Iingredients: " + sIingredients;
-
+                        + "</br> Iingredients: " + sIingredients
+                        + "<div>";
                 GestionFichier.ecrireLigne(commandeStr, contextPath + "commande.txt");
             %>
             Prix :<jsp:getProperty name="commande" property="prix" /><br /> 

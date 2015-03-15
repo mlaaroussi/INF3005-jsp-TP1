@@ -144,9 +144,8 @@ fieldset{
     height:250px;
     float:left;
 }
-#divGenres fieldset label span{
+#divTaille fieldset label span{
     float : right;
-   
 }
 #divIngredients{
 /*    border: solid 2px blue;*/
@@ -244,3 +243,6 @@ ul, #choixIngredients {
     color: black;
 }
 
+#afficher{
+    color: black;
+}
