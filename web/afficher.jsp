@@ -15,10 +15,22 @@
     </head>
     <body class="resulat">
         <h3 class='resultat'>Liste des commandes:</h3>
+        <table class= "resultat"    id="tabAffichage">
+            <thead>
+            <th>Nom</th>
+            <th>Telephone</th>
+            <th>Courriel</th>
+            <th>Adresse</th>
+            <th>Taille</th>
+            <th>Genre</th>
+            <th>Ingredients</th>
+            </thead>   
+       
         <%
             String contextPath = getServletContext().getRealPath(File.separator);
 
             out.println(GestionFichier.lire(contextPath + "commande.txt"));
         %>
+         </table>
     </body>
 </html>

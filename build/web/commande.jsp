@@ -24,11 +24,13 @@
             Nom :<jsp:getProperty name="commande" property="nom" /><br /> 
             Téléphone :<jsp:getProperty name="commande" property="telephone" /><br />
             Courriel :<jsp:getProperty name="commande" property="courriel" /><br />
+            Adresse :<jsp:getProperty name="commande" property="adresse" /><br />
             <span class='resultat'>Adresse: </span><jsp:getProperty name="commande" property="adresse" /><br />
 
             <h3>Pizza</h3>
 
-            <span>Taille pizza :</span><jsp:getProperty name="commande" property="taille" /><br />
+           Taille pizza :<jsp:getProperty name="commande" property="taille" /><br />
+           Genre :<jsp:getProperty name="commande" property="genre" /><br />
             <h3>Ingredients</h3>
             <%
                 ingredients = request.getParameterValues("ingredients");
@@ -41,13 +43,17 @@
                     sIingredients += "</ul>";
                     out.println(sIingredients);
                 }
-
+                
                 String contextPath = getServletContext().getRealPath(File.separator);
-                String commandeStr = "<div id='afficher'>"
-                        + "<h4> Commande:</h4> Nom:" + commande.getNom() + "</br> Téléphone:" + commande.getTelephone()
-                        + "</br> Courriel:" + commande.getCourriel() + "</br> Adresse" + commande.getAdresse()
-                        + "</br> Iingredients: " + sIingredients
-                        + "<div>";
+                String commandeStr = "<tr class='resultat'>"
+                        + "<td resultat>" + commande.getNom() + "</td>"
+                        + "<td resultat>" + commande.getTelephone() + "</td>"
+                        + "<td resultat>" + commande.getCourriel() + "</td>"
+                        + "<td resultat>" + commande.getAdresse()+ "</td>"
+                        + "<td resultat>" + commande.getTaille()+ "</td>"
+                        + "<td resultat>" + commande.getGenre()+ "</td>"
+                        + "<td resultat>" +  sIingredients + "</td>"
+                        + "</tr>";
                 GestionFichier.ecrireLigne(commandeStr, contextPath + "commande.txt");
             %>
             Prix :<jsp:getProperty name="commande" property="prix" /><br /> 
