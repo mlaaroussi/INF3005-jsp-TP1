@@ -1,3 +1,0 @@
-<tr><td >bolbol</td><td >342432234</td><td >bolbol@bolbol.ca</td><td >324234423</td><td >Petite</td><td >Pepperoni</td><td ><ul ><li>Sauce BBQ</li></ul></td></tr>
-<tr><td >bolbol</td><td >432234</td><td >bolbol@bolbol.ca</td><td >342432432</td><td >Moyenne</td><td >Viande Fumee</td><td ><ul ><li>Moins DeSauce</li></ul></td></tr>
-<tr><td >bolbol</td><td >324423</td><td >bolbol@bolbol.ca</td><td >342432342</td><td >Large</td><td >Fruits De Mer</td><td ><ul ><li>Moins DeSauce</li></ul></td></tr>

@@ -231,7 +231,7 @@
                     <fieldset id="infoCommande">
                         <legend>Commande :</legend>
                         <h4 id='choixPizza'></h4> 
-                        <h6 id="genrePizza"></h6>
+                        <h5 id="genrePizza"></h5>
                         <h4 id='listIngredients'></h4>
                         <ul id="choixIngredients">
                             

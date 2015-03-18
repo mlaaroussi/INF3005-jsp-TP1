@@ -255,7 +255,6 @@ ul, #choixIngredients {
     font-style: italic;
     font-stretch: expanded;
     font-weight: bolder;
-    
 } 
 .resulat table {
     margin: 10px;
@@ -273,5 +272,5 @@ ul, #choixIngredients {
     background-color:#0069d3;
 }
 .resulat table tr:hover td {
-   background-color:#7070FF;
+   background-color:#F9F9FF;
 }
