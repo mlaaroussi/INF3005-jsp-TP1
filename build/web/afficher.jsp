@@ -14,8 +14,8 @@
         <title>Afficher commande</title>
     </head>
     <body class="resulat">
-        <h3 class='resultat'>Liste des commandes:</h3>
         <table class= "resultat"    id="tabAffichage">
+            <caption>Liste des commandes</caption>
             <thead>
             <th>Nom</th>
             <th>Telephone</th>

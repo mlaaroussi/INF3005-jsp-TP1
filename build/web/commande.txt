@@ -1,1 +1,3 @@
-<tr class='resultat'><td resultat>bolbol</td><td resultat>324432342</td><td resultat>bolbol@bolbol.ca</td><td resultat>324432423432</td><td resultat>Petite</td><td resultat>Fruits De Mer</td><td resultat><ul class='resultat'><li class='resultat'>Extra Sauce</li><li class='resultat'>Sauce BBQ</li><li class='resultat'>Poivre De Chili</li><li class='resultat'>Ail</li><li class='resultat'>Moins DeSauce</li></ul></td></tr>
+<tr><td >bolbol</td><td >342432234</td><td >bolbol@bolbol.ca</td><td >324234423</td><td >Petite</td><td >Pepperoni</td><td ><ul ><li>Sauce BBQ</li></ul></td></tr>
+<tr><td >bolbol</td><td >432234</td><td >bolbol@bolbol.ca</td><td >342432432</td><td >Moyenne</td><td >Viande Fumee</td><td ><ul ><li>Moins DeSauce</li></ul></td></tr>
+<tr><td >bolbol</td><td >324423</td><td >bolbol@bolbol.ca</td><td >342432342</td><td >Large</td><td >Fruits De Mer</td><td ><ul ><li>Moins DeSauce</li></ul></td></tr>

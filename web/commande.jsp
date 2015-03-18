@@ -6,14 +6,15 @@
 <%@page import="java.io.File"%>
 <%@page import="ca.uqam.inf3005.projet1.fichier.GestionFichier"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
-    <head>
+    <head >
         <link rel="stylesheet" href="css/style.css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Commander votre pizza</title>
     </head>
-    <body class='resultat'>
+    <body class="cssCommande" >
         <div>
             <h1>La Commande a été enregistré</h1>        
             <%! String[] ingredients; %>
@@ -25,7 +26,7 @@
             Téléphone :<jsp:getProperty name="commande" property="telephone" /><br />
             Courriel :<jsp:getProperty name="commande" property="courriel" /><br />
             Adresse :<jsp:getProperty name="commande" property="adresse" /><br />
-            <span class='resultat'>Adresse: </span><jsp:getProperty name="commande" property="adresse" /><br />
+            <span >Adresse: </span><jsp:getProperty name="commande" property="adresse" /><br />
 
             <h3>Pizza</h3>
 
@@ -36,23 +37,23 @@
                 ingredients = request.getParameterValues("ingredients");
                 String sIingredients = "";
                 if (ingredients != null) {
-                    sIingredients += "<ul class='resultat'>";
+                    sIingredients += "<ul >";
                     for (int i = 0; i < ingredients.length; i++) {
-                        sIingredients += "<li class='resultat'>" + ingredients[i] + "</li>";
+                        sIingredients += "<li>" + ingredients[i] + "</li>";
                     }
                     sIingredients += "</ul>";
                     out.println(sIingredients);
                 }
                 
                 String contextPath = getServletContext().getRealPath(File.separator);
-                String commandeStr = "<tr class='resultat'>"
-                        + "<td resultat>" + commande.getNom() + "</td>"
-                        + "<td resultat>" + commande.getTelephone() + "</td>"
-                        + "<td resultat>" + commande.getCourriel() + "</td>"
-                        + "<td resultat>" + commande.getAdresse()+ "</td>"
-                        + "<td resultat>" + commande.getTaille()+ "</td>"
-                        + "<td resultat>" + commande.getGenre()+ "</td>"
-                        + "<td resultat>" +  sIingredients + "</td>"
+                String commandeStr = "<tr>"
+                        + "<td >" + commande.getNom() + "</td>"
+                        + "<td >" + commande.getTelephone() + "</td>"
+                        + "<td >" + commande.getCourriel() + "</td>"
+                        + "<td >" + commande.getAdresse()+ "</td>"
+                        + "<td >" + commande.getTaille()+ "</td>"
+                        + "<td >" + commande.getGenre()+ "</td>"
+                        + "<td >" +  sIingredients + "</td>"
                         + "</tr>";
                 GestionFichier.ecrireLigne(commandeStr, contextPath + "commande.txt");
             %>
