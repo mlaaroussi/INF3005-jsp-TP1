@@ -8,18 +8,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-
-        <script src="js/javascript.js" type="text/javascript"></script> 
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/javascript.js" type="text/javascript"></script> 
+        
         <link rel="stylesheet" href="css/style.css">
-        <title>Commandez de Pizza App</title>
+        <title>Application commande de Pizza : </title>
     </head>
 
     <body>
         <header> 
 
-            <h1 id="msgLogo">Commande votre Pizza en ligne</h1>
+            <h1 id="msgLogo"> Commandez votre Pizza en ligne : </h1>
         </header>
         <nav>
 
@@ -49,7 +49,7 @@
                                 <br />
                                 <li>
                                     <input type="radio" id="xLargee" name="taille" value="xLargee" onchange = "taillePizza(this)"/>
-                                    <label for="xLargee">Pizza xLargee<span id ="prixXl">19<sup>99</sup></span></label>
+                                    <label for="xLargee">Pizza xLarge<span id ="prixXl">19<sup>99</sup></span></label>
                                 </li>
                             </ul>
                         </fieldset>  
@@ -66,7 +66,7 @@
                                 </li>
                                 <li>
                                     <input type="radio" id="viande" name="genre" value="Viande Fumee" required onchange="genrePizza(this)"/>
-                                    <label for="rb11">Viande Fumee<span id ="prix"></span></label>
+                                    <label for="rb11">Viande Fumée<span id ="prix"></span></label>
                                 </li>
                                 <li>
                                     <input type="radio" id="vegi" name="genre" value="Végétarienne" required onchange="genrePizza(this)"/>
@@ -76,7 +76,7 @@
                         </fieldset>  
                     </div>
                     <div id="divIngredients"> 
-                        <h3>Ingredients de votre choix</h3>
+                        <h3>Ingrédients de votre choix</h3>
                         <div class ="divGroupeIngredients">
                             <fieldset>
                                 <legend>Sauce</legend>
@@ -98,7 +98,7 @@
                                     <br />
                                     <li>
                                         <input type="checkbox" id="cb4"  name="ingredients" value="Ail" onchange="compter(this)"/>
-                                        <label for="cb4">Ail</label>
+                                        <label for="cb4">Sauce à l'Ail</label>
                                     </li>
                                     <br />
                                     <li>
@@ -112,7 +112,7 @@
 
                         <div class ="divGroupeIngredients">
                             <fieldset>
-                                <legend>Légume</legend>
+                                <legend>Légumes</legend>
                                 <ul>
                                     <li>
                                         <input type="checkbox" id="cb7" name="ingredients" value="Olives Vertes" onchange="compter(this)"/>
@@ -152,7 +152,7 @@
                                     <br />
                                     <li>
                                         <input type="checkbox" id="cb15" name="ingredients" value="Fromagefeta" onchange="compter(this)"/>
-                                        <label for="cb15">Fromage féta</label>
+                                        <label for="cb15">Fromage Feta</label>
                                     </li>
                                     <br />
                                     <li>
