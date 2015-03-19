@@ -27,6 +27,7 @@
             Courriel :<jsp:getProperty name="commande" property="courriel" /><br />
             Adresse :<jsp:getProperty name="commande" property="adresse" /><br />
 
+            
             <h3>Pizza</h3>
 
            Taille pizza :<jsp:getProperty name="commande" property="taille" /><br />
