@@ -16,7 +16,7 @@
     </head>
     <body class="cssCommande" >
         <div>
-            <h1>La Commande a été enregistré</h1>        
+            <h1>La Commande a été enregistrée</h1>        
             <%! String[] ingredients; %>
             <jsp:useBean id="commande" scope="page" class="ca.uqam.inf3005.projet1.bean.CommandeBean" />
             <jsp:setProperty name="commande" property="*" />
@@ -26,8 +26,8 @@
             Téléphone :<jsp:getProperty name="commande" property="telephone" /><br />
             Courriel :<jsp:getProperty name="commande" property="courriel" /><br />
             Adresse :<jsp:getProperty name="commande" property="adresse" /><br />
-            <span >Adresse: </span><jsp:getProperty name="commande" property="adresse" /><br />
 
+            
             <h3>Pizza</h3>
 
            Taille pizza :<jsp:getProperty name="commande" property="taille" /><br />
