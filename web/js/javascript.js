@@ -12,7 +12,7 @@ function compter(selection) {
     if (selection.checked) {
         count += 1;
         if (count === 1) {
-            document.getElementById("listIngredients").innerHTML = "Ingredients";
+            $("#listIngredients").html("Ingredients");
             $("#choixIngredients").append("<li>" + selection.value + "</li>");
         } else if (count <= 5) {
             $("#choixIngredients").append("<li>" + selection.value + "</li>");
@@ -24,7 +24,7 @@ function compter(selection) {
     } else if (!selection.checked) {
         count -= 1;
         if (count === 0) {
-            document.getElementById("listIngredients").innerHTML = "";
+            $("#listIngredients").html("");
             $("#choixIngredients li").each(function () {
                 if ($(this).text() === selection.value) {
                     this.remove();
@@ -41,33 +41,33 @@ function compter(selection) {
 }
 
 function taillePizza(choix) {
-    document.getElementById("choixPizza").innerHTML = "Pizza " + choix.value;
-     document.getElementById("prixCommande").innerHTML = "";
+    $("#choixPizza").html("Pizza " + choix.value);
+    $("#prixCommande").html("");
+
     if (choix.value === "Petite") {
-        document.getElementById("prix").value = 10.99;
-        document.getElementById("prixCommande").innerHTML += "<br /> Prix :" + 10.99;
+        $("#prix").val(10.99);
+        $("#prixCommande").html("<br /> Prix :" + 10.99);
     } else if (choix.value === "Moyenne") {
-        document.getElementById("prix").value = 13.99;
-        document.getElementById("prixCommande").innerHTML += "<br /> Prix :" + 13.99;
+        $("#prix").val(13.99);
+        $("#prixCommande").html("<br /> Prix :" + 13.99);
     } else if (choix.value === "Large") {
-        document.getElementById("prix").value = 16.99;
-        document.getElementById("prixCommande").innerHTML += "<br /> Prix :" + 16.99;
+        $("#prix").val(16.99);
+        $("#prixCommande").html("<br /> Prix :" + 16.99);
+
     } else {
-        document.getElementById("prix").value = 19.99;
-        document.getElementById("prixCommande").innerHTML = "<br /> Prix :" + 19.99;
+        $("#prix").val(19.99);
+        $("#prixCommande").html("<br /> Prix :" + 19.99);
     }
 }
 
 function genrePizza(choix) {
-    document.getElementById("genrePizza").innerHTML = "Pizza " + choix.value;
+    $("#genrePizza").html("Pizza " + choix.value);
 }
 function reinitialiser() {
-    document.getElementById("choixPizza").innerHTML = "";
-    document.getElementById("prixCommande").innerHTML = "";
-    document.getElementById("prixCommande").innerHTML = "";
-    document.getElementById("prixCommande").innerHTML = "";
-    document.getElementById("prixCommande").innerHTML = "";
-    document.getElementById("choixIngredients").innerHTML = "";
-    document.getElementById("choixIngredients").innerHTML = "";
+    $("#choixPizza").html("");
+    $("#genrePizza").html("");
+    $("#listIngredients").html("");
+    $("#prixCommande").html("");
+    $("#choixIngredients").html("");
     count = 0;
 }
