@@ -21,7 +21,7 @@ body{
 h1 {
     color: #38477E;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 header{
@@ -143,7 +143,7 @@ fieldset{
     float:left;
 }
 #divGenres fieldset ul li{
-/*    border: solid 2px blue;*/
+    /*    border: solid 2px blue;*/
     width: 210px;
     float:left;
 }
@@ -161,10 +161,10 @@ fieldset{
     width: 240px;
     height:125px;
     float:left;
- }
+}
 h3{
-   margin: 10px;
- }
+    margin: 10px;
+}
 
 .divGroupeIngredients fieldset{
     width: 200px;
@@ -174,7 +174,7 @@ h3{
 }
 .divGroupeIngredients fieldset ul li {
     height: 19px;
-    width: 130px;
+    width: 160px;
     float:left;
     margin-left: 5px;
 }
@@ -255,31 +255,51 @@ ul, #choixIngredients {
     color:black;
 } 
 .resulat caption{
-    margin: 10px;
+    margin-top: 40px;
     margin-bottom: 10px;
-    font-family: sans-serif;
-    font-size: 25px;
-    font-style: italic;
-    font-stretch: expanded;
+    color: #38477E;
+    font-size: 20px;
     font-weight: bolder;
+
 } 
-.resulat table {
+.resulat  {
     margin: 10px;
     border: solid black 1px; 
     border-collapse: collapse;
     width:100%;
-    height:100%;
+
 }
-.resulat table tr td {
+.resulat  tr td {
     border: solid black 1px; 
     background-color:#ADD6FF;
+    padding: 5px;
 }
-.resulat table thead th {
+.resulat  thead th {
     border: solid black 1px; 
     background-color:#0069d3;
+    color: #FFFFFF;
+    padding: 5px;
 }
-.resulat table tr:hover td {
+.resulat  tr:hover td {
     background-color:#F9F9FF;
+}
+
+.tbl_cmd  {
+    border: solid black 1px; 
+    border-collapse: collapse;
+    width: 600px;
+}
+.tbl_cmd tr td {
+    border: solid black 1px; 
+    padding: 10px;
+
+}
+.tbl_cmd tr th {
+    color: #38477E;
+    font-weight: bolder;
+    font-size: 14px;
+    padding: 5px;
+    background-color:#ADD6FF;
 }
 
 #lien_cmd a:link, #lien_cmd a:visited {   
@@ -288,5 +308,5 @@ ul, #choixIngredients {
 
 #lien_cmd  {
     margin-top: 30px;
-	
+
 }

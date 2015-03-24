@@ -13,8 +13,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Afficher commande</title>
     </head>
-    <body class="resulat">
-        <table class= "resultat"    id="tabAffichage">
+    <body >
+        <header> 
+            <h1 id="msgLogo"> Commandez votre Pizza en ligne!</h1>
+        </header>
+        <table class="resulat">
             <caption>Liste des commandes</caption>
             <thead>
             <th>Nom</th>
@@ -23,14 +26,14 @@
             <th>Adresse</th>
             <th>Taille</th>
             <th>Genre</th>
-            <th>Ingredients</th>
-            </thead>   
-       
+            <th>Ingrédients</th>
+        </thead>   
+
         <%
             String contextPath = getServletContext().getRealPath(File.separator);
 
             out.println(GestionFichier.lire(contextPath + "commande.txt"));
         %>
-         </table>
-    </body>
+    </table>
+</body>
 </html>

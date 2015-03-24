@@ -18,12 +18,8 @@
 
     <body>
         <header> 
-
-            <h1 id="msgLogo"> Commandez votre Pizza en ligne : </h1>
+            <h1 id="msgLogo"> Commandez votre Pizza en ligne!</h1>
         </header>
-        <nav>
-
-        </nav>
         <section id="formulaire">
             <form action="commande.jsp" method="Post">
                 <div id="divCommande">
