@@ -46,7 +46,6 @@
                 }
                 
                 String contextPath = getServletContext().getRealPath(File.separator);
-                out.println(contextPath);
                 String commandeStr = "<tr>"
                         + "<td >" + commande.getNom() + "</td>"
                         + "<td >" + commande.getTelephone() + "</td>"
