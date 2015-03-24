@@ -65,14 +65,8 @@ section{
     opacity: 0.5;
 }
 
-.taillePizza a{
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: bolder;
-}
-.taillePizza span{
+#divGenres span{
     float:right;
-    margin-right:10px;
 }
 
 #divPetit{
@@ -145,6 +139,7 @@ fieldset{
     float:left;
 }
 #divTaille fieldset label span{
+    border: solid 2px pink;
     float : right;
 }
 #divIngredients{
@@ -155,24 +150,26 @@ fieldset{
 }
 
 .divGroupeIngredients{
-    /*    border: solid 2px pink;*/
-    width: 200px;
-    height:165px;
+    width: 240px;
+    height:125px;
     float:left;
-    margin-left: 25px;
-
-}
+ }
 
 .divGroupeIngredients fieldset{
-    /*    border: solid 2px pink;*/
     width: 200px;
     height:115px;
     float:left;
     margin-left: 5px;
 }
-
+.divGroupeIngredients fieldset ul li {
+    height: 19px;
+    width: 130px;
+    float:left;
+    margin-left: 5px;
+}
 input[type=radio], input[type=checkbox] {
     display:none;
+   
 }
 
 
@@ -272,5 +269,5 @@ ul, #choixIngredients {
     background-color:#0069d3;
 }
 .resulat table tr:hover td {
-   background-color:#F9F9FF;
+    background-color:#F9F9FF;
 }

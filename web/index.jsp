@@ -162,7 +162,7 @@
                                     <br />
                                     <li>
                                         <input type="checkbox" id="cb17"  name="ingredients" value="Moins De Fromage" onchange="compter(this)"/>
-                                        <label for="cb17">Moins de Fromage</label>
+                                        <label for="cb17">Double Fromage</label>
                                     </li>
                                     <br />
 

@@ -1,11 +1,8 @@
 /* 
  * TP 1 INF3005
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Code Permanent: Harm13037400
+ * 
  */
-
-/* global count */
-
 
 var count = 0;
 function compter(selection) {
