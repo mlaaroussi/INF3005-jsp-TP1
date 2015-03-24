@@ -114,28 +114,29 @@ nav input[type=button]{
 }
 
 #divCommande{
-    /*    border: solid 2px green;*/
     position: absolute;
     width: 1267px;
     height:900px;
     top: 50px;
-    /*    z-index: 9999;*/
     background-color:#EAECED;
-
 }
 #divCommande img{
     float: right;
 }
 
 fieldset{
+    border: solid 2px black;
     height: 175px;
-    /*    border: solid 2px pink;*/
 }
 
 #divGenres{
-    /*    border: solid 2px red;*/
     width: 255px;
     height:250px;
+    float:left;
+}
+#divGenres fieldset ul li{
+/*    border: solid 2px blue;*/
+    width: 210px;
     float:left;
 }
 #divTaille fieldset label span{
@@ -143,7 +144,6 @@ fieldset{
     float : right;
 }
 #divIngredients{
-    /*    border: solid 2px blue;*/
     width: 980px;
     height:200px;
     float:left;
@@ -169,7 +169,6 @@ fieldset{
 }
 input[type=radio], input[type=checkbox] {
     display:none;
-   
 }
 
 
