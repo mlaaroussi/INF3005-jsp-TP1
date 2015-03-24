@@ -14,7 +14,12 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Commander votre pizza</title>
     </head>
-    <body class="cssCommande" >
+    <body>     
+        <header> 
+
+            <h1 id="msgLogo"> Commandez votre Pizza en ligne : </h1>
+        </header>
+         <div class="cssCommande" >
         <div>
             <h1>La Commande a été enregistrée</h1>        
             <%! String[] ingredients; %>
@@ -57,9 +62,13 @@
                         + "</tr>";
                 GestionFichier.ecrireLigne(commandeStr, contextPath + "commande.txt");
             %>
-            Prix :<jsp:getProperty name="commande" property="prix" /><br /> 
-            <a href="afficher.jsp"> Afficher les commandes</a>
+             <h3>Prix total:</h3>
+           <jsp:getProperty name="commande" property="prix" />$<br /> 
+           <div id="lien_cmd">
+               <a href="afficher.jsp"> Afficher les commandes</a>
+           </div>
+           
         </div>
-
+   </div>
     </body>
 </html>

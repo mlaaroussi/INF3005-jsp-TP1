@@ -26,7 +26,6 @@
         </nav>
         <section id="formulaire">
             <form action="commande.jsp" method="Post">
-
                 <div id="divCommande">
                     <div id="divGenres">
                         <fieldset>
