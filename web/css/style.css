@@ -154,6 +154,9 @@ fieldset{
     height:125px;
     float:left;
  }
+h3{
+   margin: 10px;
+ }
 
 .divGroupeIngredients fieldset{
     width: 200px;
