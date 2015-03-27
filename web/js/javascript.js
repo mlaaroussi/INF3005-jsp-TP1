@@ -1,8 +1,9 @@
-/* 
- * TP 1 INF3005
- * Code Permanent: Harm13037400
- * 
- */
+/*  Cours INF3005 TP 1
+    Created on : Feb 28, 2015, 9:49:07 PM
+    Mohamed LAAROUSSI, LAAM03038304
+    Nabil Harzallah, HARM13037400
+    Nizar Semlali, SEMN14019103
+*/
 
 var count = 0;
 function compter(selection) {
